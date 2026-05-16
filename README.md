@@ -641,8 +641,12 @@
 > 
 > **`allow-dns-svcb`**
 > 
-> > 允许 DNS SVCB 查询。系统可能会执行 SVCB 记录 DNS 查询，而不是标准的 A 记录查询。这会导致无法返回虚拟 IP 地址。因此，默认情况下禁止执行 SVCB 记录查询，以强制系统执行 A 记录查询。设置为 `true` 表示启用，设置为 `false` 表示不启用
+> > 允许 DNS SVCB 查询。系统可能会执行 SVCB 记录 DNS 查询，而不是标准的 A 记录查询。这会导致无法返回虚拟 IP 地址。因此，默认情况下禁止执行 SVCB 记录查询，以强制系统执行 A 记录查询。设置为 `true` 表示启用，默认设置为 `false` 表示不启用。该命令会控制 HTTPS 和 SVCB
 >
+> **`allow-dns-all`**
+>
+> 允许所有 DNS 查询类型正常转发。该命令设置为 `true` 时，A/AAAA 查询返回 Fake-IP，其余查询将正常转发至上游 DNS。设置为 `false` 时，除 A/AAAA 外的 HTTPS、SVCB、TXT 等 DNS 查询会被返回空值。软件默认为开启状态
+> 
 > _Shadowrocket 或还有其他支持的隐式参数，此处可能未能完全列出，若有相关需求请联系 [buginapp@gmail.com](mailto:buginapp@gmail.com)_
 
 ### [添加规则](#使用目录)
