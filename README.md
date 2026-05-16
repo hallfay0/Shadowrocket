@@ -645,7 +645,7 @@
 >
 > **`allow-dns-all`**
 >
-> 允许所有 DNS 查询类型正常转发。该命令设置为 `true` 时，A/AAAA 查询返回 Fake-IP，其余查询将正常转发至上游 DNS。设置为 `false` 时，除 A/AAAA 外的 HTTPS、SVCB、TXT 等 DNS 查询会被返回空值。软件默认为开启状态
+> > 允许所有 DNS 查询类型正常转发。该命令设置为 `true` 时，A/AAAA 查询返回 Fake-IP，其余查询将正常转发至上游 DNS。设置为 `false` 时，除 A/AAAA 外的 HTTPS、SVCB、TXT 等 DNS 查询会被返回空值。软件默认为开启状态
 > 
 > _Shadowrocket 或还有其他支持的隐式参数，此处可能未能完全列出，若有相关需求请联系 [buginapp@gmail.com](mailto:buginapp@gmail.com)_
 
